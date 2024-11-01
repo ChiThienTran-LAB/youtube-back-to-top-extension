@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Back to Top",
+  "version": "1.0",
+  "description": "Adds a back-to-top button only on YouTube.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png"
+  }
+}
